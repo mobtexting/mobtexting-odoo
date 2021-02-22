@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+      <record id="gateway_setup_form_view" model="ir.ui.view">
+        <field name="name">gateway.setup.form</field>
+        <field name="model">mob_gateway_setup</field>
+        <field name="arch" type="xml">
+            <form string="GateWay Setup">
+            <sheet>
+                <group>
+                      <group>
+                          <field name="name"/>
+                          <field name="accesstoken"/>
+                      </group>
+                      <group>
+                          <field name="sender"/>
+                          <field name="service"/>
+                      </group>
+                    <group>
+                          <field name="active"/>
+                      </group>
+                </group>
+
+              <notebook>
+
+                <page string="Help" class="sms-page">
+                  <group>
+                    <div>
+                      <h4>Please follow below step to setup SMS Gateway:</h4>
+                      <ul>
+                        <li>First get <a href="https://portal.mobtexting.com/">MOBtexting Account</a>.</li>
+                        <li>This test SMS you can also use manually send sms.</li>
+                      </ul>
+                    </div>
+                  </group>
+                </page>
+                <page string="SMS Test" class="sms-page">
+                  <group>
+                    <field name="mobile"/>
+                  </group>
+                  <group>
+                        <field name="message" placeholder="Write Your Message"/>
+                  </group>
+                    <button string="Send" name="sms_test_action"  type="object" class="btn-primary"/>
+                </page>
+              </notebook>
+            </sheet>
+            </form>
+        </field>
+      </record>
+      <record id="gateway_setup_tree_view" model="ir.ui.view">
+        <field name="name">mob_gateway_setup.list</field>
+        <field name="model">mob_gateway_setup</field>
+        <field name="arch" type="xml">
+            <tree string="GateWay Setup">
+                <field name="name"/>
+                <field name="accesstoken"/>
+                <field name="service"/>
+                <field name="sender"/>
+            </tree>
+        </field>
+      </record>
+      <record id="action_gateway_setup" model="ir.actions.act_window">
+        <field name="name">GateWay Setup</field>
+        <field name="res_model">mob_gateway_setup</field>
+        <field name="view_mode">tree,form</field>
+<!--        <field name="search_view_id" eval="False"/>-->
+<!--        <field name="context">{}</field>-->
+      </record>
+
+      <menuitem action="action_gateway_setup" id="menu_action_gateway_setup" parent="send_sms" sequence="4" />
+
+  </data>
+</odoo>
