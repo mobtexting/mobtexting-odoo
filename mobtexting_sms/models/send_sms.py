@@ -64,8 +64,7 @@ class SendSMS(models.Model):
     def send_sms_link(self,sms_rendered_content,rendered_sms_to,record_id,model,gateway_url_id):
         sms_rendered_content = sms_rendered_content
         sms_rendered_content_msg = urllib.parse.quote_plus(sms_rendered_content)
-
-        # print("replcae no "+rendered_sms_to)
+       
         if rendered_sms_to:
             rendered_sms_to = re.sub(r'\s+', '', rendered_sms_to)
             if '+' in rendered_sms_to:
@@ -80,9 +79,7 @@ class SendSMS(models.Model):
             if ')' in rendered_sms_to:
                 rendered_sms_to = rendered_sms_to.replace(')', '')
 
-            # print(" orignialno "+rendered_sms_to)
-
-
+        
         if rendered_sms_to:
             send_url = gateway_url_id.gateway_url
             para = {"access_token": gateway_url_id.accesstoken,
@@ -112,8 +109,7 @@ class SendSMS(models.Model):
                         resultRes = response
                     result = self.env['mob_sms_track'].sms_track_create(sms_rendered_content, rendered_sms_to,
                                                                     resultRes,
-                                                                    model, gateway_url_id.id)
-                    # return result
+                                                                    model, gateway_url_id.id)                   
                     if model != 'mob_gateway_setup':
                         self.env['mail.message'].create({
                             'author_id': http.request.env.user.partner_id.id,
