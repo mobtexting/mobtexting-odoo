@@ -1,7 +1,7 @@
 {
     'name': "MOBtexting SMS Gateway",
     'version': '1.0',
-    'author': "Gunaseelan",
+    'author': "MOBtexting",
     'category': 'Tools',
     'summary':'MOBtexting SMS Gateway',
     'description':'You can use sms template to send SMS using MOBtexting Intergration.',
