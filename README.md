@@ -2,7 +2,7 @@
 
 
 ## MOBtexting plugin: ##
-First [Download] (https://github.com/mobtexting/mobtexting-odoo/archive/main.zip) this module from here
+First [download](https://github.com/mobtexting/mobtexting-odoo/archive/main.zip) this module from here
 
 # Odoo guide: ##
 Odoo CRM is available an Open Source so [download](https://www.odoo.com/page/download) it first and install.
