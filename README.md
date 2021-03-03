@@ -27,11 +27,11 @@ First [download](https://github.com/mobtexting/mobtexting-odoo/archive/main.zip)
   
   <img src="/images/5.jpg" >
   
-5) After updated list you can see that app will be appearing on this list then Click the `Install` button on the plugin after it will appear as `Installed`.
+5) After updated Apps list you can see that app will be appearing on this list then Click the `Install` button on the plugin after it will appear as `Installed`.
   
   <img src="/images/6.jpg" >
 
-6) Once installed click the `debug icon` after choose the `Become Superuser`.
+6) Once installed click the `bug icon` after choose the `Become Superuser`.
    
    <img src="/images/7.jpg" >
 
