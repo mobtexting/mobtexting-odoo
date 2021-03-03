@@ -9,10 +9,10 @@ Odoo CRM is available an Open Source so [download](https://www.odoo.com/page/dow
 
 Copy the `downloaded` folder and past it into odoo `addons/` folder which is defined in the .conf file
 
-1) Log in to the Odoo administration panel and in the  top menu bar, click `Settings`:
+1) Log in to the Odoo administration panel and in the  top menu bar, click `Settings`.
   <img src="/images/1.jpg" >
 
-2) In the right corner, you will find a description of Odoo. Under that information, you will see both the `Activate developer mode` and the `Activate developer mode (with assets)`. Click on any of these links (the `Activate the developer mode`):
+2) In the right corner, you will find a description of Odoo. Under that information, you will see both the `Activate developer mode` and the `Activate developer mode (with assets)`. Click on any of these links (the `Activate the developer mode`).
   <img src="/images/2.jpg" >
  
  3) NOTE: When you have the developer mode activated, you can see a `bug icon` in the upper right corner of the screen.
@@ -22,10 +22,10 @@ Copy the `downloaded` folder and past it into odoo `addons/` folder which is def
   <img src="/images/4.jpg" >
   <img src="/images/5.jpg" >
   
-5) after updated lits you can see that app will be appearing on this list then Click the `Install` button on the plugin after it will appear as `Installed`: 
+5) after updated lits you can see that app will be appearing on this list then Click the `Install` button on the plugin after it will appear as `Installed`.
   <img src="/images/6.jpg" >
 
-6) once installed click the `debug icon` after choose the `Become Superuser`
+6) once installed click the `debug icon` after choose the `Become Superuser`.
    <img src="/images/7.jpg" >
 
 7) then you can see that `MOBtexting SMS Gateway` will appear in the `top menu bar` list.
