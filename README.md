@@ -7,7 +7,7 @@ First [download](https://github.com/mobtexting/mobtexting-odoo/archive/main.zip)
 # Odoo Guide: ##
   Odoo CRM is available an Open Source so [download](https://www.odoo.com/page/download) it first and install.
 
-  Copy the `downloaded` folder and past it into odoo `addons/` folder which is defined in the `.conf` file
+  Copy the `downloaded` folder and paste it into the Odoo `addons/` folder which is defined in the `.conf` file
 
 1) Log in to the Odoo administration panel and in the  top menu bar, click `Settings`.
 
